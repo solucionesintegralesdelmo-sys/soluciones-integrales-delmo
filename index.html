@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Soluciones Integrales Delmo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #222;
+        }
+
+        header {
+            background-color: #0b1c2d;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        .header-contenido {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            height: 60px;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        header p {
+            font-size: 15px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .producto {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            background-color: #f2f2f2;
+        }
+
+        .producto h3 {
+            margin-bottom: 8px;
+        }
+
+        .producto p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .precio {
+            font-size: 16px;
+            font-weight: bold;
+            color: #0b1c2d;
+            margin-top: auto;
+        }
+
+        .acciones {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+
+        .btn {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: #1ebe5d;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        .pagos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .pagos img {
+            height: 75px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            .productos {
+                padding: 20px;
+            }
+
+            .header-contenido {
+                flex-direction: column;
+            }
+
+            .logo {
+                height: 55px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-contenido">
+        <img src="img/logo.png" alt="Logo Delmo" class="logo">
+        <h1>Soluciones Integrales Delmo</h1>
+    </div>
+    <p>Seguridad perimetral, Cámaras de seguridad y Automatización de portones</p>
+</header>
+
+<section class="productos">
+
+    <div class="producto">
+        <img src="img/camara-wifi.png" alt="Cámara WiFi">
+        <h3>Cámara de Seguridad WiFi</h3>
+        <p>Venta e instalación profesional.</p>
+        <div class="precio">₡35.000</div>
+        <div class="acciones">
+            <a href="https://wa.me/50663208981?text=Hola%20quiero%20cotizar%20una%20cámara%20WiFi" class="btn">
+                Cotizar
+            </a>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/cerca-electrica.png" alt="Cerca eléctrica">
+        <h3>Cerca Eléctrica JFL</h3>
+        <p>Instalación según metraje y perímetro (0–20 metros).</p>
+        <div class="precio">Desde ₡175.000</div>
+        <div class="acciones">
+            <a href="https://wa.me/50663208981?text=Hola%20quiero%20cotizar%20una%20cerca%20eléctrica" class="btn">
+                Cotizar
+            </a>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/alambre-navaja.png" alt="Alambre de navaja">
+        <h3>Alambre de Navaja</h3>
+        <p>Protección perimetral de alta seguridad.</p>
+        <div class="precio">₡4.500 / metro lineal</div>
+        <div class="acciones">
+            <a href="https://wa.me/50663208981?text=Hola%20quiero%20cotizar%20alambre%20de%20navaja" class="btn">
+                Cotizar
+            </a>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/motor-faac.png" alt="Motor FAAC">
+        <h3>Motor de Portón FAAC</h3>
+        <p>Automatización profesional de portones.</p>
+        <div class="precio">Desde ₡350.000</div>
+        <div class="acciones">
+            <a href="https://wa.me/50663208981?text=Hola%20quiero%20cotizar%20un%20motor%20FAAC" class="btn">
+                Cotizar
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>📞 WhatsApp: +506 6320 8981</p>
+    <p>📧 Correo: remodelacionesdelgado2023@gmail.com</p>
+
+    <div class="pagos">
+        <strong>Métodos de pago:</strong>
+        <span>Transferencia, SINPE o Efectivo</span>
+        <img src="img/sinpe.png" alt="SINPE Móvil">
+    </div>
+</footer>
+
+</body>
+</html>
