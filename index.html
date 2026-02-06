@@ -1,7 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluciones Integrales Delmo</title>
 
     <style>
@@ -30,6 +31,7 @@
             justify-content: center;
             gap: 15px;
             margin-bottom: 10px;
+            flex-wrap: wrap;
         }
 
         .logo {
@@ -132,13 +134,11 @@
             height: 75px;
         }
 
+        /* 📱 DISEÑO PARA TELÉFONOS */
         @media (max-width: 600px) {
+
             header h1 {
                 font-size: 24px;
-            }
-
-            .productos {
-                padding: 20px;
             }
 
             .header-contenido {
@@ -147,6 +147,39 @@
 
             .logo {
                 height: 55px;
+            }
+
+            .productos {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .producto img {
+                height: 200px;
+            }
+
+            .precio {
+                font-size: 18px;
+            }
+
+            .acciones {
+                justify-content: center;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+                font-size: 16px;
+                padding: 12px;
+            }
+
+            .pagos {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .pagos img {
+                height: 90px;
             }
         }
     </style>
@@ -159,7 +192,7 @@
         <img src="img/logo.png" alt="Logo Delmo" class="logo">
         <h1>Soluciones Integrales Delmo</h1>
     </div>
-    <p>Seguridad perimetral, Cámaras de seguridad y Automatización de portones</p>
+    <p>Seguridad perimetral, cámaras de seguridad y automatización de portones</p>
 </header>
 
 <section class="productos">
@@ -170,9 +203,7 @@
         <p>Venta e instalación profesional.</p>
         <div class="precio">₡35.000</div>
         <div class="acciones">
-            <a href="https://wa.me/50663208981?text=Hola%20quiero%20cotizar%20una%20cámara%20WiFi" class="btn">
-                Cotizar
-            </a>
+            <a href="https://wa.me/50663208981?text=Hola%20quiero%20cotizar%20una%20cámara%20WiFi" class="btn">Cotizar</a>
         </div>
     </div>
 
@@ -182,9 +213,7 @@
         <p>Instalación según metraje y perímetro (0–20 metros).</p>
         <div class="precio">Desde ₡175.000</div>
         <div class="acciones">
-            <a href="https://wa.me/50663208981?text=Hola%20quiero%20cotizar%20una%20cerca%20eléctrica" class="btn">
-                Cotizar
-            </a>
+            <a href="https://wa.me/50663208981?text=Hola%20quiero%20cotizar%20una%20cerca%20eléctrica" class="btn">Cotizar</a>
         </div>
     </div>
 
@@ -194,9 +223,7 @@
         <p>Protección perimetral de alta seguridad.</p>
         <div class="precio">₡4.500 / metro lineal</div>
         <div class="acciones">
-            <a href="https://wa.me/50663208981?text=Hola%20quiero%20cotizar%20alambre%20de%20navaja" class="btn">
-                Cotizar
-            </a>
+            <a href="https://wa.me/50663208981?text=Hola%20quiero%20cotizar%20alambre%20de%20navaja" class="btn">Cotizar</a>
         </div>
     </div>
 
@@ -206,9 +233,7 @@
         <p>Automatización profesional de portones.</p>
         <div class="precio">Desde ₡350.000</div>
         <div class="acciones">
-            <a href="https://wa.me/50663208981?text=Hola%20quiero%20cotizar%20un%20motor%20FAAC" class="btn">
-                Cotizar
-            </a>
+            <a href="https://wa.me/50663208981?text=Hola%20quiero%20cotizar%20un%20motor%20FAAC" class="btn">Cotizar</a>
         </div>
     </div>
 
@@ -227,3 +252,4 @@
 
 </body>
 </html>
+
